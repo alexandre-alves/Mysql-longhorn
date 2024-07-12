@@ -4,6 +4,7 @@ metadata:
   annotations:
      field.cattle.io/description: Mysql ClusterIP
   name: mysqlcd
+  namespace: mysqlcd
   # Add labels and annotations as per your requirements
 spec:
   ports:
