@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: my-mysql
   labels:
-    app: example
+    app: mysqlcd
 spec:
   selector:
     matchLabels:
-      app: example
+      app: mysqlcd
       tier: mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: example
+        app: mysqlcd
         tier: mysql
     spec:
       containers:
