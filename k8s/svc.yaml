@@ -10,7 +10,7 @@ spec:
     - name: mysqld
       port: 3306
       protocol: TCP
-      targetPort: 3636
+      targetPort: 3306
   selector:
      app: mysqlcd
   type: NodePort     
