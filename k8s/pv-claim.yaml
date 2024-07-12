@@ -4,7 +4,7 @@ metadata:
   name: mysql-pv-claim
   labels:
     type: longhorn
-    app: example
+    app: mysqlcd
 spec:
   storageClassName: longhorn
   accessModes:
