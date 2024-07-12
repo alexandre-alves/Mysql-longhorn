@@ -7,9 +7,16 @@ metadata:
     name: mysql-data
     type: longhorn
 spec:
+  capacity:
+    storage: 10G
+  volumeMode: Filesystem
+  storageClassName: longhorn
   accessModes:
     - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
-  storageClassName: longhorn
+  csi:
+    driver: io.rancher.longhorn
+    fsType: ext4
+    volumeAttributes:
+      numberOfReplicates: '2'
+      staleReplicaTimeout: '20'
+    volumeHandle: mysql-data
