@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysqlcd
+  namespace: mysqlcd
   labels:
     app: mysqlcd
 spec:
