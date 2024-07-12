@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-     field.cattle.io/description: Rabbitmq ClusterIP
+     field.cattle.io/description: Mysql ClusterIP
   name: mysqlcd
-  namespace: rabbitmq
   # Add labels and annotations as per your requirements
 spec:
   ports:
