@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-     field.cattle.io/description: Mysql ClusterIP
+     field.cattle.io/description: Mysql NodePort
   name: mysqlcd
   namespace: mysqlcd
   # Add labels and annotations as per your requirements
@@ -15,4 +15,4 @@ spec:
   selector:
      app: mysqlcd
   type: NodePort     
-    # Specify the labels to match the RabbitMQ pods
+    # Specify the labels to match the Mysql pods
